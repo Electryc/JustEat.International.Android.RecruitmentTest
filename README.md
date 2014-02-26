@@ -1,4 +1,8 @@
 JustEat.Android.RecruitmentTest
 ===============================
 
-This test is for the Just Eat Consumer Android App developer role.
+Welcome, this Repo contains the JUST EAT Android team recruitment tests.
+
+Best of Luck.
+
+Kieran Macdonald Hall Android Tech Lead
