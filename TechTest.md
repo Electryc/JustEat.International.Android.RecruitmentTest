@@ -1,57 +1,76 @@
 # Senior Developer (Android) - Technical Test
 
-Thank you for taking the time to do our technical test. Please don’t feel you need to spend more than 90 minutes on it in total. The test consists of two parts:
+Thank you for taking the time to do our technical test. The test consists of two parts:
 
-1. A coding test - please don’t feel you need to spend more than an hour on this part
+* A coding test
 
-2. A few technical questions - please don’t spend more than half an hour on this part
+* A few technical questions
 
-In order to avoid bounced emails (some ISP's appear to be blocking emails with candidates' test result attachments) we would like you to submit your results by uploading the relevant zip file to a shared Google Drive folder. 
+In order to avoid bounced emails we would like you to submit your results by uploading the relevant **zip** file to a shared Google Drive folder. 
 
-In order to supply you with the URL for this folder please send an email to tech.recruitment@just-eat.com stating your Google email address (Alternatively, you can let your agent know your Google address.) If you don't already have a Google email address, please obtain one so that you can be given access to the JUST EAT test results folder. 
+In order to supply you with the URL for this folder please send an email to tech.recruitment@just-eat.com stating your Google email address or let your agent know your Google address as early as possible. If you don't already have a Google email address, please obtain one so that you can be given access to the test results folder. 
 
-## Coding Test
+Please make this a single zip file named {yourname}-{role-you-apply-for}.zip containing a single file with the answers to the technical questions and one folder containing the technical test.
 
-Just Eat has a public API available at http://www.just-eat.co.uk/webservice/webservices.asmx that you can use to get restaurant information, including what restaurants delivery to what areas.
+## Coding
 
-### How to use the API
+**We expect coding standards to be inline with that of a real application but we understand that everyone does not have the same artistic flair when it comes to design and UX. Please feel free to work on this until you feel it reaches a standard that best showcases your ability but we understand if some areas have room for improvment**
 
-* getRestaurantList - returns a list of restaurants (as XML) that deliver to a postcode, including some basic restaurant information
+JUST EAT has a public API available (details below) that you can use to get restaurant information, including which restaurants deliver to what areas. We want you to use this to build an app to show these restaurants.
 
-Note that you should only submit the first part of a postcode. e.g. NW3 rather than NW3 1HT.
+#### How to use the API
 
-The API requires that you send a User-Agent header as part of the request. If you have problems connecting then please check that you’re including a User-Agent.
+##### With the following headers:
+
+Accept-Tenant: uk
+
+Accept-Language: en-GB
+
+Accept-Charset: utf-8
+
+Authorization: Basic  VGVjaFRlc3RBUEk6dXNlcjI=
+
+User-Agent: The API requires that you send a User-Agent header as part of the request. If you have problems connecting then please check that you’re including a User-Agent.
+
+Host: api.just-eat.com
+
+##### GetRestaurants
+
+* [http://api-interview.just-eat.com/](http://www.google.com/url?q=http%3A%2F%2Fapi.just-eat.com%2Frestaurants%3Fq%3Dse19&sa=D&sntz=1&usg=AFQjCNGDTQ2r7AuFD45sUZl1a6dDucGMUg)[restaurants?q=se19](http://api.just-eat.com/restaurants?q=se19) returns a list of restaurants that deliver to a postcode, including some basic restaurant information (for postcode = se19)
+
 
 ### What you need to do
 
-Please create an app using Java and the editor of your choice that locates the current postcode that the user is in. The app should then display the following information about each restaurant that delivers to that postcode:
+Please create an app with the following requirements: 
 
-* Name
+1. Its locates the current postcode that the user is geographically situated in 
 
-* Average rating
+2. Allows the user to enter a postcode manually
 
-* Restaurant logo
+3. The app should then display the following information about each restaurant that delivers to that postcode:
 
-The restaurants should be ordered from highest average rating to lowest average rating.
+	1. Name
 
-You can build up the URL to the restaurant logo as http://www.just-eat.co.uk/images/Restaurants/{restaurant_id}.gif
+	2. Average rating
 
-Please take the time to write code to the standards you would expect in a real application.
+	3. Restaurant logo - URL format to get the image: http://je-cdn-production.s3-eu-west-1.amazonaws.com/uk/images/restaurants/{restaurant_id}.gif 
+
+4. The restaurants should be ordered from highest average rating to lowest average rating 
+
+5. Must compile to an APK in one simple step - preferably direcly from Eclipse - please provide an instruction on how to build.
 
 ## Questions
 
-Please don’t spend more than 30 minutes on this section.
+1. Did you have time to complete the coding test? What would you add to your solution if you had more time?
 
-1. Did you have time to complete the coding test? What would you add if you had more time?
-
-2. What was the most useful feature in your opinion that was added to Jelly Bean? Please include a snippet of code that shows how you've used it.
+2. What was the most useful feature in your opinion that was added to Android 4.4? Please include a snippet of code that shows how you would use it.
 
 3. What's your favourite programming language? Why?
 
 4. How would you track down a performance bottleneck in an app? Have you ever had to do this?
 
-5. How would you make the Just Eat public API - http://www.just-eat.co.uk/ webservice/webservices.asmx - easier to consume within a native app?
+5. How would you make the Just Eat public API you used in this interview better
 
-6. Which of your apps in marketplaces are you most proud of? Why?
+6. Which of your apps in the App Store are you most proud of? Why?
 
-7. Please describe yourself using either XML or JSON.
+7. Please describe yourself using JSON.
