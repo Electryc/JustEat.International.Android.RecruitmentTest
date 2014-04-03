@@ -20,15 +20,16 @@ JUST EAT has a public API available (details below) that you can use to get rest
 
 #### How to use the API
 
-##### With the following headers:
+##### Headers
 
-Accept-Tenant: uk
+The API requires you specify a set of valid request headers before it'll respond.
 
-Accept-Language: en-GB
+		Accept-Tenant: uk
+		Accept-Language: en-GB
+		Accept-Charset: utf-8
+		Authorization: Basic VGVjaFRlc3RBUEk6dXNlcjI=
+		Host: api-interview.just-eat.com
 
-Accept-Charset: utf-8
-
-Authorization: Basic  VGVjaFRlc3RBUEk6dXNlcjI=
 
 User-Agent: The API requires that you send a User-Agent header as part of the request. If you have problems connecting then please check that you’re including a User-Agent.
 
