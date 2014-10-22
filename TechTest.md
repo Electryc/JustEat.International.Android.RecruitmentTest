@@ -70,7 +70,7 @@ Please create an app with the following requirements:
 
 4. How would you track down a performance bottleneck in an app? Have you ever had to do this?
 
-5. How would you make the Just Eat public API you used in this interview better
+5. How would you make the Just Eat public API you used in this interview better?
 
 6. Which of your apps in the App Store are you most proud of? Why?
 
