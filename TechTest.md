@@ -33,11 +33,9 @@ The API requires you specify a set of valid request headers before it'll respond
 
 User-Agent: The API requires that you send a User-Agent header as part of the request. If you have problems connecting then please check that you’re including a User-Agent.
 
-Host: api.just-eat.com
-
 ##### GetRestaurants
 
-* [http://api-interview.just-eat.com/](http://www.google.com/url?q=http%3A%2F%2Fapi.just-eat.com%2Frestaurants%3Fq%3Dse19&sa=D&sntz=1&usg=AFQjCNGDTQ2r7AuFD45sUZl1a6dDucGMUg)[restaurants?q=se19](http://api.just-eat.com/restaurants?q=se19) returns a list of restaurants that deliver to a postcode, including some basic restaurant information (for postcode = se19)
+* http://api-interview.just-eat.com/restaurants?q=se19 returns a list of restaurants that deliver to a postcode, including some basic restaurant information (for postcode = se19)
 
 
 ### What you need to do
