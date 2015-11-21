@@ -28,14 +28,14 @@ The API requires you specify a set of valid request headers before it'll respond
 		Accept-Language: en-GB
 		Accept-Charset: utf-8
 		Authorization: Basic VGVjaFRlc3RBUEk6dXNlcjI=
-		Host: api-interview.just-eat.com
+		Host: public.je-apis.com
 
 
 User-Agent: The API requires that you send a User-Agent header as part of the request. If you have problems connecting then please check that you’re including a User-Agent.
 
 ##### GetRestaurants
 
-* http://api-interview.just-eat.com/restaurants?q=se19 returns a list of restaurants that deliver to a postcode, including some basic restaurant information (for postcode = se19)
+* https://public.je-apis.com/restaurants?q=se19 returns a list of restaurants that deliver to a postcode, including some basic restaurant information (for postcode = se19)
 
 
 ### What you need to do
